@@ -14,9 +14,34 @@ class modul1 extends StatelessWidget {
       title: "Latihan Modul 1",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Halaman Dashboard")
+          title: Center(
+              child: Text("Halaman Dashboard")
+            ),
+            backgroundColor: Colors.orangeAccent,
         ),
-        backgroundColor: Colors.deepOrangeAccent,
+        body: Container(
+          child: 
+          Column(
+            children: [
+              SizedBox(height: 20),
+              Center(
+                child: Image.network(
+                  "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt32e45b8b8e7b3e11/6515e5b314893a095dce72f5/EP7_Act2_PatchNotes_7_07_Banner.jpg?auto=webp&disable=upscale&height=475",
+                  width: 400,
+                ),
+              ),
+              Container(
+                height: 20,
+              ),
+              Center(
+                child: Image.network(
+                  "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt32e45b8b8e7b3e11/6515e5b314893a095dce72f5/EP7_Act2_PatchNotes_7_07_Banner.jpg?auto=webp&disable=upscale&height=475",
+                  width: 400,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
